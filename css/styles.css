@@ -5,6 +5,7 @@
   --header-adress-color: #434455;
   --header-menu-link: #404bbf;
   --background-color: #ffffff;
+  --color-border: #8e8f99;
 }
 
 body {
@@ -183,6 +184,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   border: none;
+  transition: color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover {
   background-color: var(--header-menu-link);
@@ -288,9 +290,11 @@ img {
   margin-right: auto;
   margin-left: auto;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .name-container {
-  padding: 32px 16px 32px 16px;
+  padding: 32px 0;
   text-align: center;
 }
 .team-name {
@@ -318,10 +322,8 @@ img {
 .soc-item {
   width: 40px;
   height: 40px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.soc-list {
+.soc-link {
   width: 100%;
   height: 100%;
   background-color: #404bbf;
@@ -329,15 +331,20 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+}
+.soc-link:hover {
+  background-color: #404bbf;
+}
+.soc-link:focus {
+  background-color: #404bbf;
 }
 .team-social {
-  fill: #f4f4fd;
+  fill: var(--fooetr-color);
 }
 /*-------CASTOMERS--------*/
 .castom {
   padding: 120px 0;
-}
-.castom-container {
 }
 .castom-title {
   font-weight: 700;
@@ -361,21 +368,32 @@ img {
 .castom-item {
   width: 168px;
   height: 88px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
+  width: calc((100% - 120px) / 6);
 }
 .castom-link {
   width: 100%;
   height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
   align-items: center;
+  color: var(--color-border);
+  transition: color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+}
+.castom-link:hover {
+  color: #404bbf;
+  border-color: #404bbf;
+}
+.castom-link:focus {
+  color: #404bbf;
+  border-color: #404bbf;
 }
 .castom-icon {
-  fill: #8e8f99;
   width: 104px;
   height: 56px;
+  fill: currentColor;
 }
 
 /*----footer----*/
@@ -419,7 +437,7 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   display: flex;
@@ -437,11 +455,12 @@ img {
 .soc-list-footer {
   width: 100%;
   height: 100%;
-  background-color: #404bbf;
+  background-color: var(--logo-fooetr);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 .soc-list-footer:hover {
   background-color: #31d0aa;
@@ -526,6 +545,7 @@ img {
   padding: 12px 24px 12px 24px;
   border-radius: 4px;
   border: 1px solid #e7e9fc;
+  transition: color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-btn:hover {
