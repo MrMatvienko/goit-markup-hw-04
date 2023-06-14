@@ -589,8 +589,8 @@ img {
   position: relative;
   overflow: hidden;
 }
-.info-portfolio:hover .shadow-block-info,
-.info-portfolio:focus .shadow-block-info {
+.portfolio-item:hover .shadow-block-info,
+.portfolio-item:focus .shadow-block-info {
   transform: translate(0);
   background-color: #4d5ae5;
 }
@@ -604,7 +604,6 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .info-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
