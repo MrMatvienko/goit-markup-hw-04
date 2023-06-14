@@ -591,7 +591,7 @@ img {
 }
 .portfolio-item:hover .info-text,
 .portfolio-item:focus .info-text {
-  transform: translate(0);
+  transform: translateY(0);
 }
 
 .info-text {
